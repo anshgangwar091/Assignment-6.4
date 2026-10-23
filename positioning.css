@@ -1,0 +1,127 @@
+/* positioning.css — Assignment 6.4 */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7fafc;
+    color: #2d3748;
+    line-height: 1.6;
+}
+
+/* 2. Sticky Navigation Bar (`position: sticky`) */
+.sticky-nav {
+    position: sticky;
+    top: 0;
+    background-color: #1a365d;
+    padding: 15px 20px;
+    z-index: 1000; /* 6. High z-index to stay above page content */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sticky-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.sticky-nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.sticky-nav ul li a:hover {
+    color: #319795;
+}
+
+/* 3. Floating Action Button (`position: fixed`) */
+.fab-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #3182ce;
+    color: #ffffff;
+    border: none;
+    border-radius: 50px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 999; /* 6. Ensures it floats above scrolling content */
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.fab-btn:hover {
+    background-color: #2b6cb0;
+    transform: scale(1.05);
+}
+
+/* Scrollable Sections */
+.page-section {
+    padding: 80px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1px solid #e2e8f0;
+    min-height: 80vh;
+}
+
+.page-section h1, .page-section h2 {
+    color: #1a365d;
+    margin-bottom: 15px;
+}
+
+/* 5. Relative Parent Container (`position: relative`) */
+.relative-parent-card {
+    position: relative; /* Acts as the anchor frame for absolute children */
+    background-color: #ffffff;
+    border: 1px solid #cbd5e0;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* 4. Absolute Badge (`position: absolute`) */
+.absolute-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #d69e2e;
+    color: #ffffff;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.card-action-btn {
+    margin-top: 15px;
+    background-color: #319795;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.card-action-btn:hover {
+    background-color: #285e61;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 40px;
+    background-color: #edf2f7;
+    color: #718096;
+}

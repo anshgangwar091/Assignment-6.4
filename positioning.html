@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Practice</title>
+    <!-- External Stylesheet -->
+    <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+
+    <!-- 2. Sticky Navigation Bar -->
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#section-1">Home</a></li>
+            <li><a href="#section-2">Features</a></li>
+            <li><a href="#section-3">Pricing</a></li>
+            <li><a href="#section-4">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- 3. Floating Action Button (FAB) with Fixed Positioning -->
+    <button class="fab-btn" aria-label="Help and Support">💬 Help</button>
+
+    <!-- 1. Multiple Scrollable Sections -->
+    <main>
+        <section id="section-1" class="page-section">
+            <h1>CSS Positioning Demonstration</h1>
+            <p>Scroll down this page to observe how the sticky navigation bar stays pinned to the top, and the help button floats in the bottom right corner.</p>
+        </section>
+
+        <section id="section-2" class="page-section">
+            <h2>Featured Cards (Absolute & Relative Positioning)</h2>
+            <p>The card below features a badge positioned absolutely relative to its card container.</p>
+
+            <!-- 4 & 5. Relative Parent Card with Absolute Badge -->
+            <div class="relative-parent-card">
+                <span class="absolute-badge">Featured Offer</span>
+                <h3>Pro Developer Tier</h3>
+                <p>Unlock advanced tutorials, layout systems, and priority code reviews.</p>
+                <button class="card-action-btn">Learn More</button>
+            </div>
+        </section>
+
+        <section id="section-3" class="page-section">
+            <h2>Pricing & Plans</h2>
+            <p>Explore our flexible tier options designed for student developers mastering modern web design.</p>
+        </section>
+
+        <section id="section-4" class="page-section">
+            <h2>Get in Touch</h2>
+            <p>Reach out to our support team or click the floating help button anytime for assistance.</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Positioning Practice Assignment</p>
+    </footer>
+
+</body>
+</html>
